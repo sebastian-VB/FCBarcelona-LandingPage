@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-gold:     #EDBB00;
+    --color-blue:     #004D98;
+    --color-blue-dark:#052e57;
+    --color-burgundy: #A50044;
+    --color-red:      #DB0030;
+    --color-yellow:   #FFED02;
+    --color-black:    #000000;
+
+    --color-letters:  #ffffff;
+    --clippy-before:    polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    --clippy-after:     polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+/*?---------------------------ESTILOS DEL HEADER-----------------*/
+
+.header{
+    background-color: var(--color-blue-dark);
+    color: var(--color-letters);
+}
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__container-picture img{ width: 170px; height: 170px; }
+
+.header__container-title{ font-size: 45px; padding-left: 25px;}
+
+.header__container::before,
+.header__container::after{
+    content: "";
+    width: 20px;
+    height: 70px;
+    transition: clip-path .3s;
+}
+
+.header__container::before{
+    background-color: var(--color-gold);
+    clip-path: var(--clippy-before);
+}
+
+.header__container::after{
+    background-color: var(--color-burgundy);
+    clip-path: var(--clippy-after);
+}
+
+.header__container:hover::before,
+.header__container:hover::after{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+/*?---------------------------ESTILOS DEL NAV-----------------*/
+
