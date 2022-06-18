@@ -70,3 +70,39 @@ body{
 
 /*?---------------------------ESTILOS DEL NAV-----------------*/
 
+.nav{
+    background-color: var(--color-gold);
+    width: 15%;
+    height: 670px;
+    padding: 30px 10px;
+}
+
+.nav ul{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.nav a{
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.nav__item{ transition: background-color .3s, color 1s; }
+
+.nav__item:hover{
+    background-color: var(--color-blue);
+}
+
+.nav__item:hover a{
+    color: var(--color-letters);
+}
+
+/*?---------------------------ESTILOS DEL MAIN-----------------*/
+
+
+
+
+
