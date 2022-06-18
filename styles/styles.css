@@ -22,6 +22,7 @@
 
 body{
     font-family: 'Roboto Slab', serif;
+    position: relative;
 }
 
 /*?---------------------------ESTILOS DEL HEADER-----------------*/
@@ -29,6 +30,8 @@ body{
 .header{
     background-color: var(--color-blue-dark);
     color: var(--color-letters);
+    position: fixed;
+    width: 100%;
 }
 
 .header__container{
@@ -66,15 +69,19 @@ body{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.header__container:hover{ background-color: #061e36; }
+
 
 
 /*?---------------------------ESTILOS DEL NAV-----------------*/
 
 .nav{
     background-color: var(--color-gold);
-    width: 15%;
-    height: 670px;
+    width: 253px;
+    height: 672px;
     padding: 30px 10px;
+    position: fixed;
+    top: 174px;
 }
 
 .nav ul{
@@ -92,16 +99,73 @@ body{
 
 .nav__item{ transition: background-color .3s, color 1s; }
 
-.nav__item:hover{
-    background-color: var(--color-blue);
-}
+.nav__item:hover{ background-color: var(--color-blue); }
 
-.nav__item:hover a{
-    color: var(--color-letters);
-}
+.nav__item:hover a{ color: var(--color-letters); }
 
 /*?---------------------------ESTILOS DEL MAIN-----------------*/
 
+
+.main{
+    background-color: rgb(240, 240, 240);
+    width: 70%;
+    height: 1600px;
+    position: fixed;
+    top: 174px;
+    left: 253px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 20px;
+}
+
+.main .section{
+    height: 1000px;
+}
+
+/*---------------------------estilos para la historia-----------------*/
+
+.main #historia{
+    height: 850px;
+}
+
+.main .section .section__title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background-color: var(--color-blue);
+    color: var(--color-letters);
+    padding: 15px 8px;
+    width: 50%;
+}
+
+.main__section-container{ width: 90%; margin: 0 auto;}
+
+.main__historia p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.main__historia-imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.main__historia-imagenes figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__historia-imagenes figure p{
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/*---------------------------estilos para los estadios-----------------*/
 
 
 
