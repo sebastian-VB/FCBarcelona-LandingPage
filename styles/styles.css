@@ -243,4 +243,63 @@ ul.menu li {
     font-weight: 700;
 }
 
+/*---------------------------estilos para los trofeos-----------------*/
+
+.main #trofeos{
+    height: 470px;
+}
+
+.main__trofeos-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.main__trofeos-item-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-image: linear-gradient(to top, var(--color-blue) 0%, var(--color-red) 100%);
+    color: var(--color-letters);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main__trofeos-item .trofeoImg{
+    width: 50px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main__trofeos-item .trofeoCh{ background-image: url('../materials/img/trofeos/champions.png');}
+.main__trofeos-item .trofeoSCE{ background-image: url('../materials/img/trofeos/super-copa-europa.png');}
+.main__trofeos-item .trofeoMC{ background-image: url('../materials/img/trofeos/mundial-clubes.png');}
+.main__trofeos-item .trofeoLL{ background-image: url('../materials/img/trofeos/la-liga.png');}
+.main__trofeos-item .trofeoCR{ background-image: url('../materials/img/trofeos/copa-del-rey.png');}
+
+.main__section-container-trofeos{ width: 90%; margin: 0 auto;}
+
+.main__trofeos-item{ list-style: none; }
+
+.trofeos-content{ text-align: center; }
+
+.trofeos-content p{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.trofeos-content h3{
+    font-size: 25px;
+}
+
+
+/*---------------------------estilos para los trofeos-----------------*/
+
+
+
+
+/*---------------------------estilos para los mejores jugadas y goles-----------------*/
 
