@@ -25,6 +25,10 @@ body{
     position: relative;
 }
 
+li{
+    list-style: none;
+}
+
 /*?---------------------------ESTILOS DEL HEADER-----------------*/
 
 .header{
@@ -119,7 +123,7 @@ body{
 }
 
 .main .section{
-    height: 1000px;
+    height: 2000px;
 }
 
 /*---------------------------estilos para la historia-----------------*/
@@ -131,7 +135,7 @@ body{
 .main .section .section__title{
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: var(--color-blue);
     color: var(--color-letters);
     padding: 15px 8px;
@@ -167,9 +171,7 @@ body{
 
 /*---------------------------estilos para los estadios-----------------*/
 
-.main #estadio{
-    height: 550px;
-}
+.main #estadio{ height: 550px; }
 
 .casanova { background-image: url('../materials/img/estadios/campo-casanova.jpg'); }
 .industria { background-image: url('../materials/img/estadios/campo-de-la-calle-de-la-Industria.jpg'); }
@@ -245,9 +247,7 @@ ul.menu li {
 
 /*---------------------------estilos para los trofeos-----------------*/
 
-.main #trofeos{
-    height: 470px;
-}
+.main #trofeos{ height: 470px; }
 
 .main__trofeos-list{
     display: grid;
@@ -284,7 +284,6 @@ ul.menu li {
 
 .main__trofeos-item{ list-style: none; }
 
-.trofeos-content{ text-align: center; }
 
 .trofeos-content p{
     font-weight: 700;
@@ -298,8 +297,47 @@ ul.menu li {
 
 /*---------------------------estilos para los trofeos-----------------*/
 
+.main #mejores-jugadores{ height: 680px; }
 
+.main__section-container-jugadores{ width: 90%; margin: 0 auto; }
 
+.main__jugadores-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.jugador-img{
+    width: 200px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main__jugadores-item .messi{background-image: url('../materials/img/mejores-jugadores/messi.jpg');}
+.main__jugadores-item .ronaldinho{background-image: url('../materials/img/mejores-jugadores/ronaldinho.jpg');}
+.main__jugadores-item .johan{background-image: url('../materials/img/mejores-jugadores/johan.jpg');}
+.main__jugadores-item .sotil{background-image: url('../materials/img/mejores-jugadores/sotil.jpeg');}
+.main__jugadores-item .maradona{background-image: url('../materials/img/mejores-jugadores/maradona.jpg');}
+.main__jugadores-item .xavi{background-image: url('../materials/img/mejores-jugadores/xavi.jpg');}
+.main__jugadores-item .iniesta{background-image: url('../materials/img/mejores-jugadores/iniesta.jpg');}
+.main__jugadores-item .koeman{background-image: url('../materials/img/mejores-jugadores/koeman.jpg');}
+
+.main__jugadores-item{
+    background-image: linear-gradient(to top, var(--color-blue) 0%, var(--color-red) 100%);
+    color: var(--color-yellow);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.main__jugadores-item p{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
 
 /*---------------------------estilos para los mejores jugadas y goles-----------------*/
 
