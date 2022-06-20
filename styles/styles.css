@@ -113,7 +113,6 @@ li{
 .main{
     /* background-color: rgb(240, 240, 240); */
     width: 70%;
-    height: 1600px;
     position: fixed;
     top: 174px;
     left: 253px;
@@ -123,14 +122,12 @@ li{
 }
 
 .main .section{
-    height: 2000px;
+    height: 550px;
 }
 
 /*---------------------------estilos para la historia-----------------*/
 
-.main #historia{
-    height: 850px;
-}
+.main #historia{ height: 850px; }
 
 .main .section .section__title{
     font-size: 30px;
@@ -284,6 +281,7 @@ ul.menu li {
 
 .main__trofeos-item{ list-style: none; }
 
+.trofeos-content{ text-align: center; }
 
 .trofeos-content p{
     font-weight: 700;
@@ -295,7 +293,7 @@ ul.menu li {
 }
 
 
-/*---------------------------estilos para los trofeos-----------------*/
+/*---------------------------estilos para los mejores jugadores-----------------*/
 
 .main #mejores-jugadores{ height: 680px; }
 
@@ -340,4 +338,25 @@ ul.menu li {
 }
 
 /*---------------------------estilos para los mejores jugadas y goles-----------------*/
+
+.main #mejores-jugadas-goles{ height: 1500px; }
+
+.main__section-container-jugadasGoles{ 
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-video{
+    width: 450px;
+    height: 400px;
+    text-align: center;
+}
+
+.container-video p{
+    width: 90%;
+    margin-top: 10px;
+}
+
 
