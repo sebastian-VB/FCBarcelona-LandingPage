@@ -432,4 +432,167 @@ ul.menu li {
 
 /*?--------------------------------MEDIA QUERY---------*/
 
+@media (max-width: 1470px){
+
+    .main #historia, .main #estadio, .main #trofeos,
+    .main #mejores-jugadores,
+    .aside{ height: auto; }
+
+    .main{ width: 55%; }
+
+    .main__historia-imagenes{ flex-direction: column; margin-top: 20px; }
+
+    .main__estadio-img .img{ width: 400px; height: 200px; }
+
+    .main__section-container ul li { flex-direction: column; }
+
+    .main__section-container ul li p{ margin-bottom: 15px; }
+
+    ul.menu{ padding-top: 600px;}
+
+    .main__trofeos-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-bottom: 30px;
+    }
+
+    .main__jugadores-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin-bottom: 30px;
+    }
+
+    .main #mejores-jugadas-goles{ height: 1350px; }
+
+    .main__section-container-jugadasGoles{flex-direction: column; align-items: center; margin-bottom: 30px;}
+
+}
+
+@media (max-width: 1100px){
+
+
+    .header{ position: absolute; }
+
+    .nav{ width: 100%; position: absolute; height: auto; top: 150px;}
+
+    .nav ul{flex-direction: row; gap: 20px; flex-wrap: wrap;}
+
+    .nav a{ font-size: 24px; padding: 10px;}
+
+    .main{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        overflow-y: visible;
+        top: 250px;
+    }
+
+    .main__section-container ul li { flex-direction: row; }
+
+    .main__trofeos-list{ margin-bottom: 30px; }
+
+    .main__jugadores-list{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-bottom: 30px;
+    }
+
+    .main__section-container-jugadasGoles{flex-direction: column; align-items: center; margin-bottom: 30px;}
+
+    .aside{  position: absolute;  width: 100%;; top: 1150px; }
+
+    .aside__list{ flex-direction: row; justify-content: space-between;}
+
+    .footer{ 
+        position: absolute; 
+        width: 100%;;
+        top: 1325px;
+        padding: 10px;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 1020px){
+
+    .main__section-container ul li { flex-direction: column; }
+
+    .main__section-container ul li p{ margin-bottom: 15px; }
+
+    ul.menu{ padding-top: 600px;}
+
+    .main__section-container-jugadasGoles{ margin-bottom: 100px;}
+}
+
+@media (max-width: 961px){
+    .main{ top: 320px; }
+    
+    .main__section-container-jugadasGoles{ margin-bottom: 120px;}
+}
+
+
+@media (max-width: 768px){
+
+
+    .header__container-title{ font-size: 30px; }
+
+    .header__container-picture img{ width: 100px; height: 100px;}
+
+    .nav{ top: 100px;}
+
+    .nav a{ font-size: 18px; padding: 5px;}
+
+    .main{ top: 230px; }
+
+    .main .section .section__title{ font-size: 20px; }
+
+    .main__historia-imagenes{ flex-direction: column; margin-top: 20px; }
+
+    .main__estadio-img { width: 100%;}
+
+    .main__estadio-img .img{ width: 300px; height: 200px; }
+    
+    .main__estadio-img p{ width: 100%; margin-left: 50px;}
+
+
+
+    .main__trofeos-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .main__jugadores-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin-bottom: 30px;
+    }
+
+    .mejores__jugadores-item{ padding: 10px; }
+
+    .jugador-img{ width: 170px; height: 100px;}
+
+    .main__section-container-jugadasGoles{flex-direction: column; align-items: center; margin-bottom: 30px;}
+
+    .aside__list{ flex-direction: row; justify-content: space-between;}
+
+    .footer h2 { font-size: 18px; }
+
+    .footer p{ font-size: 15px; }
+
+    .footer__container-picture img{ width: 80px; height: 80px; }
+
+    .footer__container-title{ font-size: 25px;}
+
+}
+
+@media (max-width: 600px){
+
+    .aside__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer { top: 1440px; }
+}
 
